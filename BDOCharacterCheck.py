@@ -31,14 +31,14 @@ if(a != None):
 	z.write("Failed to login");
 	exit();
 
+z.write("Available Character Names:\n");
 for i in range(len(names)):
 	go('https://www.blackdesertonline.com/shop/preorder/namereservation/AJAXIsExistCharacterName.json?serverName=na&characterName=' + names[i])
 	s = show();
 	m = re.search('true', s);
 	if(m == None):
-		result.insert(i, "Character name \"" + names[i] + "\" is Available");
-	else:
-		result.insert(i, "Character name \"" + names[i] + "\" is Not Available");
+		result.insert(i, names[i]);
+	
 
 for k in result:
 	z.write("%s\n" % k);
