@@ -1,4 +1,7 @@
 # Black Desert Online Name Checker
+
+#Does not work anymore since preorders have been disabled
+
 Checks if a family/character name is taken using the python module "Twill" for Black Desert Online
 
 This was written in Python 2.7 and requires Twill to be installed. Twill can be found here http://twill.idyll.org/
